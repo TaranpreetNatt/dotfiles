@@ -1,0 +1,32 @@
+import = ["~/dotfiles/alacritty/themes/alacritty-theme/themes/catppuccin_mocha.toml"]
+
+[shell]
+  program = "/opt/homebrew/bin/bash"
+  args = ['-l']
+
+# Alacritty Configuration in TOML
+
+# Window dimensions (changes require restart)
+[window]
+  dimensions = { columns = 160, lines = 40}
+  opacity = 1
+  position = { y = 0 }
+  padding = { x = 12, y = 0}
+  # startup_mode = "Fullscreen"
+
+# Font configuration
+[font]
+  # Specify the font family and style
+  normal = { family = "Fira Code", style = "Regular" } # Ensure this font is installed
+  size = 13
+  bold = { family = "Fira Code", style = "Bold" } # Ensure this font is installed
+  italic = { family = "Fira Code", style = "Italic" } # Ensure this font is installed
+
+# Cursor configuration
+[cursor]
+  style = { shape = "Beam", blinking = "on" }
+
+# Scrollback buffer size (number of lines)
+[scrolling]
+  history = 10000
+  multiplier = 2
