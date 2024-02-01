@@ -1,4 +1,4 @@
-export PATH=/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/taranpreetnatt/.cargo/bin:"/Users/taranpreetnatt/Library/Application Support/JetBrains/Toolbox/scripts"
+export PATH=/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/taranpreetnatt/.cargo/bin:"/Users/taranpreetnatt/Library/Application Support/JetBrains/Toolbox/scripts":/Applications/Kitty.app/Contents/MacOS:/Users/taranpreetnatt/Library/Python/3.11/bin
 
 # Gets the number of unstaged and untracked files and echo's them
 git_branch() {
@@ -15,3 +15,9 @@ git_branch() {
 # Prompt customization: directory git:(branch)+files
 export PS1="\n\[\033[35;49;1m\w\[\033[0m\] \$(git_branch)\n"
 
+
+# Created by `pipx` on 2024-02-01 15:34:46
+export PATH="$PATH:/Users/taranpreetnatt/Library/Python/3.11/bin"
+
+# Created by `pipx` on 2024-02-01 15:34:46
+export PATH="$PATH:/Users/taranpreetnatt/.local/bin"
