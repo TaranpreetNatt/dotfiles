@@ -11,7 +11,7 @@ import = ["~/dotfiles/alacritty/themes/catppuccin_macchiato.toml"]
   dimensions = { columns = 160, lines = 40}
   opacity = 1
   position = { y = 0 }
-  padding = { x = 12, y = 0}
+  padding = { x = 20, y = 20}
   # startup_mode = "Fullscreen"
 
 # Font configuration
@@ -30,3 +30,5 @@ import = ["~/dotfiles/alacritty/themes/catppuccin_macchiato.toml"]
 [scrolling]
   history = 10000
   multiplier = 2
+
+[mouse]
