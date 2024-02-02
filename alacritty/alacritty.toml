@@ -1,4 +1,4 @@
-import = ["~/dotfiles/alacritty/themes/catppuccin_macchiato.toml"]
+import = ["~/dotfiles/alacritty/themes/catppuccin.toml"]
 
 [shell]
   program = "/opt/homebrew/bin/bash"
@@ -9,7 +9,7 @@ import = ["~/dotfiles/alacritty/themes/catppuccin_macchiato.toml"]
 # Window dimensions (changes require restart)
 [window]
   dimensions = { columns = 160, lines = 40}
-  opacity = 1
+  opacity = 0.99
   position = { y = 0 }
   padding = { x = 20, y = 20}
   # startup_mode = "Fullscreen"
@@ -17,10 +17,10 @@ import = ["~/dotfiles/alacritty/themes/catppuccin_macchiato.toml"]
 # Font configuration
 [font]
   # Specify the font family and style
-  normal = { family = "Fira Code", style = "Regular" } # Ensure this font is installed
+  normal = { family = "Hack Nerd Font Mono", style = "Regular" } # Ensure this font is installed
   size = 13
-  bold = { family = "Fira Code", style = "Bold" } # Ensure this font is installed
-  italic = { family = "Fira Code", style = "Italic" } # Ensure this font is installed
+  bold = { family = "Hack Nerd Font Mono", style = "Bold" } # Ensure this font is installed
+  italic = { family = "Hack Nerd Font Mono", style = "Italic" } # Ensure this font is installed
 
 # Cursor configuration
 [cursor]
