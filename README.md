@@ -2,6 +2,8 @@
 
   `brew install fzf`  
   `brew install bat`
+  `brew install ripgrep`
+  `brew install lazygit`
 
   Have to install tpm for tmux to get all the plugins, follow the github page https://github.com/tmux-plugins/tpm
 
