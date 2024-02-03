@@ -10,9 +10,9 @@
 The folders in this file are symbolically linked to the expected location of the application.
 Ex. -s: symlink, -f: replace existing directory
 
-  `ln -sf ~/dotfiles/alacritty ~/.config/alacritty`
-  `ln -sf ~/dotfiles/nvim ~/.config/nvim`
-  `ln -sf ~/dotfiles/starship ~/.config/starship`
+  `ln -sf ~/dotfiles/alacritty ~/.config/alacritty`  
+  `ln -sf ~/dotfiles/nvim ~/.config/nvim`  
+  `ln -sf ~/dotfiles/starship ~/.config/starship`  
   `ln -sf ~/dotfiles/.bash_profile ~/.bash_profile`  
   `ln -sf ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf`  
 
