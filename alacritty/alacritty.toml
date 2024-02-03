@@ -8,11 +8,13 @@ import = ["~/dotfiles/alacritty/themes/catppuccin.toml"]
 
 # Window dimensions (changes require restart)
 [window]
-  dimensions = { columns = 160, lines = 40}
+  dimensions = { columns = 180, lines = 60}
   opacity = 0.99
-  position = { y = 0 }
-  padding = { x = 20, y = 20}
+  position = {x = 100, y = 100 }
+  padding = { x = 20}
   # startup_mode = "Fullscreen"
+  decorations = "None"
+  option_as_alt = "OnlyLeft" # Needed to make option act as alt to provide commands
 
 # Font configuration
 [font]
@@ -32,3 +34,8 @@ import = ["~/dotfiles/alacritty/themes/catppuccin.toml"]
   multiplier = 2
 
 [mouse]
+
+[keyboard]
+  bindings = [
+    {key = "T", mods = "Command", action = "None"}
+  ]
