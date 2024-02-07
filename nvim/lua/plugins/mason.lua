@@ -17,6 +17,13 @@ return {
       "clangd",
       "eslint_d",
       "sonarlint-language-server",
+      "docker-compose-language-service",
+      "dockerfile-language-server",
+      "bash-language-server",
+      "pyright",
+      "debugpy",
+      "pylint",
+      "black",
     },
   },
   ---@param opts MasonSettings | {ensure_installed: string[]}
