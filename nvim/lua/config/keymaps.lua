@@ -33,3 +33,9 @@ end, {
   noremap = true,
   silent = true,
 })
+
+vim.keymap.set("n", "<C-o>", "<C-o>zz", {
+  desc = "Go to next find and center screen and display line number",
+  noremap = true,
+  silent = true,
+})
