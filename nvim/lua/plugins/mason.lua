@@ -5,6 +5,8 @@ return {
   build = ":MasonUpdate",
   opts = {
     ensure_installed = {
+      "ansible-language-server",
+      "ansible-lint",
       "bash-language-server",
       "black",
       "checkmake",
