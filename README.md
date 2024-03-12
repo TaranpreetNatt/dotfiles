@@ -31,4 +31,15 @@ The args = ['l'] means start with login shell, meaning the shell will look in th
   
 Installed tmux plugin manager from https://github.com/tmux-plugins/tpm
 
+# GitHub
 
+Add the following to the ~/.gitconfig file to have neovim resolve merge conflicts.
+```
+[merge]
+  tool = nvimdiff
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "nvimdiff"]
+  layout = "LOCAL, BASE, REMOTE"
+```
