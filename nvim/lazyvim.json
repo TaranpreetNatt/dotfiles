@@ -1,9 +1,11 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.coding.copilot",
+    "lazyvim.plugins.extras.coding.copilot-chat",
     "lazyvim.plugins.extras.dap.core"
   ],
   "news": {
-    "NEWS.md": "3314"
+    "NEWS.md": "6296"
   },
-  "version": 3
+  "version": 6
 }
