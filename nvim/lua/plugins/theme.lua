@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "tokyonight",
     },
   },
   {
@@ -47,5 +47,17 @@ return {
       vim.g.everforest_background = "hard"
       vim.g.everforest_theme = "dark"
     end,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "moon",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
   },
 }
