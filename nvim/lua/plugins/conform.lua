@@ -2,9 +2,10 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
-      python = { "black" },
-      lua = { "stylua" },
       fish = { "fish_indent" },
+      javascript = { "clang-format" },
+      lua = { "stylua" },
+      python = { "black" },
       sh = { "shfmt" },
     },
   },
