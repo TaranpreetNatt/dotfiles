@@ -21,7 +21,7 @@ import = ["~/dotfiles/alacritty/themes/catppuccin.toml"]
 [font]
   # Specify the font family and style
   normal = { family = "Hack Nerd Font Mono", style = "Regular" } # Ensure this font is installed
-  size = 15
+  size = 14
   bold = { family = "Hack Nerd Font Mono", style = "Bold" } # Ensure this font is installed
   italic = { family = "Hack Nerd Font Mono", style = "Italic" } # Ensure this font is installed
 
