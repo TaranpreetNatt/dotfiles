@@ -1,11 +1,5 @@
 return {
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-  },
-  {
     "Mofiqul/dracula.nvim",
     name = "dracula",
     priority = 1000,
@@ -35,6 +29,7 @@ return {
   {
     "sainnhe/everforest",
     name = "everforest",
+    priority = 1000,
     opts = {
       transparent = true,
       styles = {
@@ -43,21 +38,28 @@ return {
       },
     },
     config = function()
-      vim.g.everforest_enable_italic = true
       vim.g.everforest_background = "hard"
-      vim.g.everforest_theme = "dark"
+      vim.g.everforest_enable_italic = 1
+      vim.g.everforest_transparent_background = false
+      vim.g.everforest_ui_contrast = "high"
     end,
   },
   {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
-      variant = "moon",
+      variant = "dawn",
       transparent = true,
       styles = {
         sidebars = "transparent",
         floats = "transparent",
       },
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
     },
   },
 }
