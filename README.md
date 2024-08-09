@@ -1,9 +1,11 @@
 # Important installations
 
   `brew install fzf`  
-  `brew install bat`
-  `brew install ripgrep`
-  `brew install lazygit`
+  `brew install bat`    
+  `brew install ripgrep`  
+  `brew install lazygit`  
+  `brew install node`  
+  `brew install icu4c`
 
   Have to install tpm for tmux to get all the plugins, follow the github page https://github.com/tmux-plugins/tpm
 
