@@ -9,6 +9,11 @@ return {
     "ellisonleao/gruvbox.nvim",
     name = "gruvbox",
     priority = 1000,
+    config = true,
+    opts = {
+      transparent_mode = true,
+      contrast = "hard",
+    },
   },
   {
     "Mofiqul/dracula.nvim",
