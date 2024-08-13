@@ -1,4 +1,4 @@
-import = ["~/dotfiles/alacritty/themes/catppuccin.toml"]
+import = ["~/dotfiles/alacritty/themes/gruvbox_dark.toml"]
 
 [env]
 term = "xterm-256color"
