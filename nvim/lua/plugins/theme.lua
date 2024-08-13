@@ -1,5 +1,16 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight",
+    },
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
+    priority = 1000,
+  },
+  {
     "Mofiqul/dracula.nvim",
     name = "dracula",
     priority = 1000,
@@ -54,12 +65,6 @@ return {
         sidebars = "transparent",
         floats = "transparent",
       },
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
     },
   },
 }
