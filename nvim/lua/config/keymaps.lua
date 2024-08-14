@@ -51,3 +51,11 @@ vim.keymap.set("n", "<C-o>", "<C-o>zz", {
   noremap = true,
   silent = true,
 })
+
+-- For nvimdiff
+
+if vim.wo.diff then
+  vim.api.nvim_set_keymap("n", "<leader>1", ":diffget LOCAL<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "<leader>2", ":diffget BASE<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "<leader>3", ":diffget REMOTE<CR>", { noremap = true, silent = true })
+end
