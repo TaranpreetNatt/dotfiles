@@ -43,5 +43,5 @@ Add the following to the ~/.gitconfig file to have neovim resolve merge conflict
   prompt = false
   keepBackup = false
 [mergetool "nvimdiff"]
-  layout = "LOCAL, BASE, REMOTE"
+  layout = "LOCAL, MERGED, REMOTE"
 ```
