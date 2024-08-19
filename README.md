@@ -1,3 +1,6 @@
+# .bash_profile
+Copy this manually because the specific company might change what is required in the .bash_profile. Example configuring proxies.
+
 # Important installations
 
   `brew install fzf`  
