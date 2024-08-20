@@ -15,7 +15,7 @@ term = "xterm-256color"
   opacity = 0.9
   blur = true
   position = {x = 100, y = 100 }
-  padding = { x = 10, y = 20}
+  padding = { x = 10, y = 30}
   decorations = "None"
   option_as_alt = "OnlyLeft" # Needed to make option act as alt to provide commands
   startup_mode = "SimpleFullscreen"
