@@ -62,6 +62,7 @@ return {
       "gotmpl",
       "gowork",
       "helm",
+      "help",
       "html",
       "java",
       "javascript",
