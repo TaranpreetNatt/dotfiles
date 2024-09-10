@@ -8,7 +8,8 @@ Copy this manually because the specific company might change what is required in
   `brew install ripgrep`  
   `brew install lazygit`  
   `brew install node`  
-  `brew install icu4c`
+  `brew install icu4c`  
+  `curl -s "https://get.sdkman.io" | bash`  
 
   Have to install tpm for tmux to get all the plugins, follow the github page https://github.com/tmux-plugins/tpm
 
