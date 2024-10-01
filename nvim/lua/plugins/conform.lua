@@ -7,6 +7,7 @@ return {
       lua = { "stylua" },
       python = { "black" },
       sh = { "shfmt" },
+      go = { "gofmt" },
     },
   },
 }
