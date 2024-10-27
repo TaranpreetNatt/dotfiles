@@ -192,6 +192,7 @@ S = '^built-in retina display$'
 O = '^built-in retina display$'
 T = '^built-in retina display$'
 M = '^built-in retina display$'
+O = 1
 A = 2
 B = 1
 
@@ -226,3 +227,7 @@ run = 'move-node-to-workspace B'
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace O'
