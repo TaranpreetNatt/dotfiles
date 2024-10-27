@@ -23,6 +23,8 @@ Ex. -s: symlink, -f: replace existing directory
   `ln -sf ~/dotfiles/starship ~/.config/starship`  
   `ln -sf ~/dotfiles/.bash_profile ~/.bash_profile`  
   `ln -sf ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf`  
+  `ln -sf ~/dotfiles/aerospace ~/.config/aerospace`  
+  `ln -sf ~/dotfiles/sketchybar ~/.config/sketchybar`
 
 # Alacritty
 
@@ -32,6 +34,19 @@ Ex. -s: symlink, -f: replace existing directory
 
 The program is the path to the bash binary on the system.  
 The args = ['l'] means start with login shell, meaning the shell will look in the .bash_profile for any configurations  
+
+# Aerospace
+
+Some needed installations.
+
+```
+brew tap FelixKratz/formulae
+brew install borders
+```
+```
+brew tap FelixKratz/formulae
+brew install sketchybar
+```
 
 # tmux  
   
