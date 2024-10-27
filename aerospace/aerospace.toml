@@ -90,11 +90,11 @@ outer.right =      0
 alt-comma = 'layout accordion horizontal vertical'
 alt-period = 'layout tiles horizontal vertical'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+# See: https:/john/nikitabobko.github.io/AeroSpace/commands#focus
+alt-h = 'focus --boundaries-action wrap-around-the-workspace left'
+alt-j = 'focus --boundaries-action wrap-around-the-workspace down'
+alt-k = 'focus --boundaries-action wrap-around-the-workspace up'
+alt-l = 'focus --boundaries-action wrap-around-the-workspace right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
@@ -192,7 +192,7 @@ S = '^built-in retina display$'
 O = '^built-in retina display$'
 T = '^built-in retina display$'
 M = '^built-in retina display$'
-O = 1
+N = 1
 A = 2
 B = 1
 
@@ -230,4 +230,4 @@ run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace N'
