@@ -26,15 +26,15 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 20
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+default-root-container-layout = 'accordion'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
 #               tall monitor (anything higher than wide) gets vertical orientation
-default-root-container-orientation = 'auto'
+default-root-container-orientation = 'vertical'
 
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
@@ -104,8 +104,6 @@ alt-shift-l = 'move right'
 
 alt-shift-f = 'fullscreen'
 
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
@@ -135,8 +133,6 @@ alt-y = 'workspace Y'
 alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace 1'
-alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
@@ -165,6 +161,11 @@ alt-shift-x = 'move-node-to-workspace X'
 alt-shift-y = 'move-node-to-workspace Y'
 alt-shift-z = 'move-node-to-workspace Z'
 
+
+alt-shift-0 = 'move-node-to-monitor --focus-follows-window ^built-in retina display$'
+alt-shift-1 = 'move-node-to-monitor --focus-follows-window 1'
+alt-shift-2 = 'move-node-to-monitor --focus-follows-window 2'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -190,8 +191,9 @@ alt-shift-l = ['join-with right', 'mode main']
 S = '^built-in retina display$'
 O = '^built-in retina display$'
 T = '^built-in retina display$'
+M = '^built-in retina display$'
 A = 2
-G = 1
+B = 1
 
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
@@ -211,4 +213,16 @@ run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace G'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'move-node-to-workspace M'
