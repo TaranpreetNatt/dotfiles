@@ -10,6 +10,7 @@ Copy this manually because the specific company might change what is required in
   `brew install node`  
   `brew install icu4c`  
   `curl -s "https://get.sdkman.io" | bash`  
+  `brew install --cask nikitabobko/tap/aerospace`  
 
   Have to install tpm for tmux to get all the plugins, follow the github page https://github.com/tmux-plugins/tpm
 
@@ -39,10 +40,6 @@ The args = ['l'] means start with login shell, meaning the shell will look in th
 
 Some needed installations.
 
-```
-brew tap FelixKratz/formulae
-brew install borders
-```
 ```
 brew tap FelixKratz/formulae
 brew install sketchybar
