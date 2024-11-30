@@ -191,7 +191,6 @@ O = '^built-in retina display$'
 T = '^built-in retina display$'
 N = 1
 A = 2
-B = 1
 
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
@@ -212,18 +211,6 @@ run = 'move-node-to-workspace T'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
 run = 'move-node-to-workspace T'
-
-[[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
