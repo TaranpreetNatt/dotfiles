@@ -17,7 +17,7 @@ Copy this manually because the specific company might change what is required in
 # Symbolic link of dotfiles
 
 The folders in this file are symbolically linked to the expected location of the application.
-Ex. -s: symlink, -f: replace existing directory
+Ex. -s: symlink, -f: replace existing directory  
 
   `ln -sf ~/dotfiles/alacritty ~/.config/alacritty`  
   `ln -sf ~/dotfiles/nvim ~/.config/nvim`  
@@ -61,3 +61,7 @@ Add the following to the ~/.gitconfig file to have neovim resolve merge conflict
 [mergetool "nvimdiff"]
   layout = "LOCAL, MERGED, REMOTE"
 ```
+
+# K9s
+
+Have to symbolically link the config.yaml and skins directory.

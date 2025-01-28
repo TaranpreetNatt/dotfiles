@@ -64,11 +64,13 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
-      variant = "dawn",
-      transparent = true,
+      variant = "moon",
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+        bold = true,
+        italic = true,
+      },
+      highlight_groups = {
+        Visual = { fg = "#E0E6ED" },
       },
     },
   },
