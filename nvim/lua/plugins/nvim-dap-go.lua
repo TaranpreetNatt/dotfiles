@@ -1,4 +1,3 @@
--- ~/.config/nvim/lua/plugins/dap-go.lua
 return {
   "leoluz/nvim-dap-go",
   ft = { "go" },
