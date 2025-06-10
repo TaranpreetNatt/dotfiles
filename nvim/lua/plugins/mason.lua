@@ -29,7 +29,7 @@ return {
       "npm-groovy-lint",
       "prettier",
       "pylint",
-      "pyright",
+      -- "pyright",
       "shfmt",
       "sonarlint-language-server",
       "stylua",
