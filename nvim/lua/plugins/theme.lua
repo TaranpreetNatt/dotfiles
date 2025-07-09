@@ -46,18 +46,24 @@ return {
     "sainnhe/everforest",
     name = "everforest",
     priority = 1000,
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
     config = function()
-      vim.g.everforest_background = "hard"
-      vim.g.everforest_enable_italic = 1
-      vim.g.everforest_transparent_background = false
-      vim.g.everforest_ui_contrast = "high"
+      vim.o.termguicolors = true
+      -- Set to dark mode
+      vim.o.background = "dark"
+
+      -- Everforest configuration
+      vim.g.everforest_background = "hard" -- hard contrast
+      vim.g.everforest_enable_italic = 1 -- enable italics
+      vim.g.everforest_disable_italic_comment = 0 -- keep italic comments
+      vim.g.everforest_transparent_background = 0 -- opaque background
+      vim.g.everforest_ui_contrast = "high" -- high UI contrast
+      vim.g.everforest_better_performance = 1 -- better performance
+      vim.g.everforest_diagnostic_text_highlight = 1 -- highlight diagnostic text
+      vim.g.everforest_diagnostic_line_highlight = 1 -- highlight diagnostic lines
+      vim.g.everforest_diagnostic_virtual_text = "colored" -- colored virtual text
+
+      -- Load the colorscheme
+      vim.cmd("colorscheme everforest")
     end,
   },
   {
