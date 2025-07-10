@@ -1,7 +1,7 @@
 import = ["~/dotfiles/alacritty/themes/gruvbox_dark.toml"]
 
 [env]
-term = "xterm-256color"
+  TERM = "xterm-256color"
 
 [shell]
   program = "/opt/homebrew/bin/bash"
