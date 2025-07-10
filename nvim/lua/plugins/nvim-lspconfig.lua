@@ -22,6 +22,21 @@ return {
       },
     }
 
+    opts.servers.pylsp = {
+      on_attach = opts.on_attach,
+      capabilities = opts.capabilities,
+      settings = {
+        pylsp = {
+          plugins = {
+            pycodestyle = {
+              maxLineLength = 120, -- Adjust to your preferred limit (default: 79)
+              -- ignore = { "E501" },  -- Uncomment to fully ignore E501 instead
+            },
+          },
+        },
+      },
+    }
+
     return opts
   end,
 }
