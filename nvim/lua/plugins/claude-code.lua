@@ -39,9 +39,9 @@ return {
       keymaps = {
         toggle = {
           variants = {
-            resume = "<leader>acR",
-            continue = "<leader>acC", -- Normal mode keymap for Claude Code with continue flag
-            verbose = "<leader>acV",  -- Normal mode keymap for Claude Code with verbose flag
+            resume = "<leader>ar",
+            continue = "<leader>ac", -- Normal mode keymap for Claude Code with continue flag
+            verbose = "<leader>av",  -- Normal mode keymap for Claude Code with verbose flag
           },
         },
         window_navigation = true, -- Enable window navigation keymaps (<C-h/j/k/l>)
