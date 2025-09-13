@@ -7,6 +7,7 @@ return {
     ensure_installed = {
       "ansible-language-server",
       "ansible-lint",
+      "basedpyright",
       "bash-language-server",
       "black",
       "checkmake",
@@ -29,7 +30,6 @@ return {
       "npm-groovy-lint",
       "prettier",
       "pylint",
-      -- "pyright",
       "shfmt",
       "sonarlint-language-server",
       "stylua",
