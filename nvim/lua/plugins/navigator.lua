@@ -1,9 +1,10 @@
 return {
   "ray-x/navigator.lua",
+  event = "VeryLazy",
   dependencies = {
     { "hrsh7th/nvim-cmp" },
-    { "nvim-treesitter/nvim-treesitter" },
-    { "ray-x/guihua.lua",               run = "cd lua/fzy && make" },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    { "ray-x/guihua.lua", run = "cd lua/fzy && make" },
     {
       "ray-x/go.nvim",
       event = { "CmdlineEnter" },
@@ -20,6 +21,14 @@ return {
   },
   config = function()
     require("go").setup()
+
+    -- Ensure treesitter is available before setting up navigator
+    local ts_ok = pcall(require, "nvim-treesitter.configs")
+    if not ts_ok then
+      vim.notify("Treesitter not available, skipping navigator setup", vim.log.levels.WARN)
+      return
+    end
+
     require("navigator").setup({
       lsp_signature_help = true, -- enable ray-x/lsp_signature
       lsp = { format_on_save = true },
@@ -35,9 +44,9 @@ return {
         vim.api.nvim_buf_set_keymap(0, "n", "<leader><C-c>", ":GoCoverage -p<CR>", {})
 
         -- Opens test files
-        vim.api.nvim_buf_set_keymap(0, "n", "<leader>ga", ":lua require('go.alternate').switch(true, '')<CR>", {})       -- Test
+        vim.api.nvim_buf_set_keymap(0, "n", "<leader>ga", ":lua require('go.alternate').switch(true, '')<CR>", {}) -- Test
         vim.api.nvim_buf_set_keymap(0, "n", "<leader>gv", ":lua require('go.alternate').switch(true, 'vsplit')<CR>", {}) -- Test Vertical
-        vim.api.nvim_buf_set_keymap(0, "n", "<leader>gs", ":lua require('go.alternate').switch(true, 'split')<CR>", {})  -- Test Split
+        vim.api.nvim_buf_set_keymap(0, "n", "<leader>gs", ":lua require('go.alternate').switch(true, 'split')<CR>", {}) -- Test Split
       end,
       group = vim.api.nvim_create_augroup("go_autocommands", { clear = true }),
     })

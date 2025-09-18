@@ -2,6 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   version = false, -- last release is way too old and doesn't work on Windows
   build = ":TSUpdate",
+  lazy = false,
   event = { "LazyFile", "VeryLazy" },
   init = function(plugin)
     -- PERF: add nvim-treesitter queries to the rtp and it's custom query predicates early
@@ -10,7 +11,7 @@ return {
     -- Luckily, the only thins that those plugins need are the custom queries, which we make available
     -- during startup.
     require("lazy.core.loader").add_to_rtp(plugin)
-    require("nvim-treesitter.query_predicates")
+    pcall(require, "nvim-treesitter.query_predicates")
   end,
   dependencies = {
     {
@@ -18,8 +19,11 @@ return {
       config = function()
         -- When in diff mode, we want to use the default
         -- vim text objects c & C instead of the treesitter ones.
-        local move = require("nvim-treesitter.textobjects.move") ---@type table<string,fun(...)>
-        local configs = require("nvim-treesitter.configs")
+        local move_ok, move = pcall(require, "nvim-treesitter.textobjects.move")
+        local configs_ok, configs = pcall(require, "nvim-treesitter.configs")
+        if not move_ok or not configs_ok then
+          return
+        end
         for name, fn in pairs(move) do
           if name:find("goto") == 1 then
             move[name] = function(q, ...)
@@ -42,7 +46,7 @@ return {
   cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
   keys = {
     { "<c-space>", desc = "Increment selection" },
-    { "<bs>",      desc = "Decrement selection", mode = "x" },
+    { "<bs>", desc = "Decrement selection", mode = "x" },
   },
   ---@type TSConfig
   ---@diagnostic disable-next-line: missing-fields
@@ -119,6 +123,9 @@ return {
         return true
       end, opts.ensure_installed)
     end
-    require("nvim-treesitter.configs").setup(opts)
+    local ok, configs = pcall(require, "nvim-treesitter.configs")
+    if ok then
+      configs.setup(opts)
+    end
   end,
 }
